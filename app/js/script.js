@@ -8,14 +8,14 @@ const menuclickHandler = () => {
    console.log("clicked ham");
 
    if (menu.classList.contains("open")) {
-      body.classList.remove('noscroll');
+      // body.classList.remove('noscroll');
       menu.classList.remove("open");
       fadeElements.forEach((element) => {
          element.classList.remove("fade-in");
          element.classList.add("fade-out");
       });
    } else {
-      body.classList.add('noscroll');
+      // body.classList.add('noscroll');
       menu.classList.add("open");
       fadeElements.forEach((element) => {
          element.classList.remove("fade-out");
