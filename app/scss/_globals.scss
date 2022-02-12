@@ -1,0 +1,82 @@
+html {
+   font-size: 100%;
+   box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: inherit;
+}
+
+body{
+   margin: 0;
+   padding: 0;
+
+   &.noscroll {
+      overflow: hidden;
+   }
+}
+
+a,
+a:visited,
+a:hover {
+   text-decoration: none;
+   font-family: "Barlow", sans-serif;
+}
+
+h1 {
+   font-family: 'Fraunces', serif;
+   font-weight: 900;
+   text-transform: uppercase;
+   color: $white;
+   letter-spacing: 0.5rem
+}
+
+h2 {
+   font-family: 'Fraunces', serif;
+   font-weight: 900;
+   color: $veryDarkdesaturatedBlue;
+   font-size: 1.625rem;
+   margin: 0;
+}
+
+h3 {
+   font-family: 'Fraunces', serif;  
+   font-size: 1.25rem;
+   color: $darkGrayishBlue;
+   text-transform: uppercase;
+   letter-spacing: 4px;
+}
+h4 {
+   font-family: "Barlow", sans-serif;
+   margin-top: 1.25em;
+   font-size: 13px;
+   color: $darkGrayishBlue;
+}
+
+p {
+   font-family: "Barlow", sans-serif;
+   color: $darkGrayishBlue;
+   margin: 2.375em 0;
+   font-size: 1rem;
+   line-height: 1.5;
+}
+
+//flex
+.flex {
+    display: flex;
+ 
+    &-jc-sb {
+       justify-content: space-between;
+    }
+    &-jc-c {
+       justify-content: center;
+    }
+    &-ai-c {
+       align-items: center;
+    }
+    &-fd-c {
+        flex-direction: column;
+    }
+ }

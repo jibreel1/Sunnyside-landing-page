@@ -1,0 +1,37 @@
+.testimonial {
+   text-align: center;
+
+   &_grid {
+      display: grid;
+      grid-template-columns: 1fr;
+
+      @include point-up(medium) {
+         grid-template-columns: 1fr 1fr 1fr;
+         gap: 2.5em;
+      }
+   }
+
+   margin: 4.375em 1.875em 5.9375em 1.875em;
+
+   @include point-up(large){
+       margin: 10.25em 10.875em;
+   }
+
+   img {
+      width: 20%;
+      border-radius: 50%;
+   }
+   h2 {
+      font-size: 1rem;
+   }
+
+   p {
+       line-height: 30px;
+      margin: 2.8125em 0;
+      color: $veryDarkdesaturatedBlue;
+   }
+
+   &_item {
+      margin-top: 4.0625em;
+   }
+}
